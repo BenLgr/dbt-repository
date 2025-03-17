@@ -1,4 +1,4 @@
-
+{{ config(materialized='view') }}
 select 
     order_date,
     sum(order_total_paid) as paid,
